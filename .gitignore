@@ -1,0 +1,13 @@
+*.aux
+*.bbl
+*.bcf
+*.blg
+*.idx
+*.log
+*.out
+*.xml
+*.spl
+*.synctex.gz
+*.backup
+PoStemplate.odt
+*.pdf

@@ -1,0 +1,41 @@
+\documentclass[review]{elsarticle}
+
+\usepackage{lineno,hyperref}
+
+\input{extrapackages}
+\input{settings}
+
+\newcommand{\auth}[2]{\author{#2\fnref{#1}}}
+\newcommand{\aff}[2]{\fntext[#1]{#2}}
+
+\bibliographystyle{elsarticle-num}
+
+%%%%%%%%%%%%%%%%%%%%%%%
+\journal{Nuclear Instruments \& Methods in Physics Research, Section A\sep}
+\title{New Test Beam Results of 3D and Pad Detectors Constructed with Poly-Crystalline CVD Diamond}
+% \author{Elsevier\fnref{myfootnote}}
+
+\begin{document}
+
+\begin{frontmatter}
+
+	\input{authors}
+	\input{Abstract}
+	
+	\begin{keyword}
+	Diamond Detectors \sep 3D \sep Rate
+	% \MSC[2010] 00-01\sep  99-00
+	\end{keyword}
+
+\end{frontmatter}
+
+\linenumbers
+
+\section{Introduction}
+
+\paragraph{Motivation} We're not motivated...
+
+\section*{References}
+\bibliography{mybibfile}
+
+\end{document}
