@@ -4,16 +4,16 @@
 
 \input{extrapackages}
 \input{settings}
+\input{newcommands}
 
-\newcommand{\auth}[2]{\author{#2\fnref{#1}}}
-\newcommand{\aff}[2]{\fntext[#1]{#2}}
+\newcommand{\auth}[2]{\author[#1]{#2}}
+\newcommand{\aff}[2]{\address[#1]{#2}}
 
 \bibliographystyle{elsarticle-num}
 
 %%%%%%%%%%%%%%%%%%%%%%%
-\journal{Nuclear Instruments \& Methods in Physics Research, Section A\sep}
+\journal{Nuclear Instruments \& Methods in Physics}% Section A, }
 \title{New Test Beam Results of 3D and Pad Detectors Constructed with Poly-Crystalline CVD Diamond}
-% \author{Elsevier\fnref{myfootnote}}
 
 \begin{document}
 
@@ -30,10 +30,13 @@
 \end{frontmatter}
 
 \linenumbers
+\input{Introduction}
+\input{3D}
+\input{Rate}
+\input{Conclusion}
 
-\section{Introduction}
-
-\paragraph{Motivation} We're not motivated...
+\section*{List of Acronyms}
+\input{acros}
 
 \section*{References}
 \bibliography{mybibfile}
