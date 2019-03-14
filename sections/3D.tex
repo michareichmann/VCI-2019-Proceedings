@@ -1,28 +1,23 @@
 \section{3D Pixel Detectors}
-3D detectors can largely reduce the drift distance of the charge carriers induced by ionising particles. More details about the working principle can be found in \cite{3D}, \cite{parker}.\par
+The 3D geometry reduces the drift distance of the charge carriers created by ionising particles compared to a planar device. More details about the working principle can be found in \cite{parker}, \cite{3D}.
 %%%%%%%%%%%%%%%%%%%%%%% WORKING PRINCIPLE %%%%%%%%%%%%%%%%%%%%%%%%%%%
-% \paragraph{Working Principle}
+% \subsection{Working Principle}
 % Its basic principle is shown in \ar{3d1}: In a planar detector 
 % \fig{.16}{3DConcept}[Comparison of the planar and the 3D detector concepts.][3d1]
 % the readout and bias electrodes are brought onto the front and back side of the sensor with a thickness $D$. The resulting drift distance $L$ of the charge carriers is of the order of $D$. In the 3D detector the electrodes are put inside of the detector material so that the \acp{MIP} can travel the same distance $D$ in the material and therefore create the same amount charge carriers but $L$ is largely reduced.\par
 %%%%%%%%%%%%%%%%%%%%%%% FABRICATION %%%%%%%%%%%%%%%%%%%%%%%%%%
-\paragraph{Fabrication}
-In order to generate these electrodes in diamond the columns are 
-\wrapfig[r]{.35}{BondingScheme}[Bump bonding scheme.][bb]
-drilled with a \SI{800}{\nano\meter} femtosecond laser which converts the diamond into a resistive mixture of different carbon phases \cite{3dfab}. By using \ac{SLM} a column yield of \SI{>99}{\%} and a column diameter of \SI{2.6}{\micro\meter} can be achieved \cite{slm}. The largest fabricated device has about 4000 of these cells. \par
-The final detector is then built by connecting to the bias and readout columns with surface metallisation and bump bonding the sensor to the readout electronics as shown in \ar{bb}. For the latest detectors a cell size of \SI{50x50}{\micro\meter} was chosen. Since the layout of the available \acp{ROC} has a different pixel pitch several cells had to be ganged together.\par
+\subsection{Fabrication}
+In order to generate the electrodes in diamond 
+\wrapfig[l]{.5}{BondingScheme}[Bump bonding scheme.][bb]
+columns are drilled using a \SI{130}{\femto\second} laser with a wavelength of \SI{800}{\nano\meter} which converts the diamond into a electrically conductive mixture of different carbon phases \cite{3dfab}. The conductivity of the columns is of the \orderof{\SI{1}{\ohm\centi\meter}}. By applying \ac{SLM} a column yield of \SI{>99}{\%} and a column diameter of \SI{2.6}{\micro\meter} can be achieved \cite{slm}. The largest fabricated device has about 4000 of these cells. \par
+The final device was built by connecting to the bias and readout columns with surface metallisation and bump bonding the sensor to the readout electronics as shown in \ar{bb}. For the detectors described in here a cell size of \SI{50x50}{\micro\meter} was chosen. Since the layout of the available \acp{ROC} has a different pixel pitch several cells had to be ganged together.
 %%%%%%%%%%%%%%%%%%%%%%% 3x2 %%%%%%%%%%%%%%%%%%%%%%%%%%
-\paragraph{PSI46digV2.1respin}
-The first prototype of a \SI{50x50}{\micro\meter} 3D pixel detector is connected to the CMS
-\subfigs{\subfig{.2}{EffMap}[\SI{3x2}{} efficiency.][em2]}{\subfig{.2}[r]{EffVol}[Efficiency vs. voltage.][ev]}[\SI{3x2}{} results.]
-PSI46digV2.1respin \ac{ROC} \cite{kornmayer} with a \SI{3x2}{} ganging to match the pixel pitch of \SI{150x100}{\micro\meter}. In this case indium bump are used to connect to the \ac{ROC}. %The chip was then tuned to a global pixel threshold of \SI{\sim1500}{e}. 
-The preliminary beam test results show an efficiency of \SI{99.2}{\%} (\ar{em2}). This value is close to the efficiency of a silicon pixel of \SI{99.9}{\%} which was tested in parallel. Compared to the silicon the 3D pixel detector has a relative efficiency of \SI{99.3}{\%}. For this value it was not considered that some of the 3D cells are not working. Due to the bad tracking resolution at \ac{PSI} it is not possible to detect them in this measurement. Nevertheless a small mismatch is expected due to low field regions between the electrodes and the columns themselves. \ar{ev} shows the the device is already fully efficient at a Voltage of \SI{30}{\volt} and stays constant for higher voltages.\par
-The measured pulse height of \SI{\sim11}{\kilo e} is consistent with the measurement in the next paragraph due to the different momentum of the incident particles. 
-
+\subsection{PSI46digV2.1respin read-out}
+The first prototype of a \SI{50x50}{\micro\meter} 3D pixel detector was connected to the PSI46digV2.1respin \ac{ROC} \cite{kornmayer} with a \SI{3x2}{} cell ganging to match the pixel pitch of \SI{150x100}{\micro\meter}. In this case the 3D sensors were bump bonded to the \ac{ROC} at the Nanofabrication Lab in Princeton with indium bumps. The preliminary beam test results show, that relative to a planar silicon device the efficiency in the 
+\subfigs{\subfig{.16}{EffMap}[\SI{3x2}{} efficiency.][em2]}{\subfig{.16}[r]{EffVol}[Efficiency vs. voltage.][ev]}[\SI{3x2}{} results.]
+red fiducial area amounts to \SI{99.3}{\%} (\ar{em2}). It was not considered that some of the 3D cells in this region may not work due to broken or missing columns or due to metalisation issues. In order to acquire this information further data has to be analysed. Nevertheless a small mismatch is expected due to low field regions between the electrodes and the columns themselves. \ar{ev} shows the device is already fully efficient at a Voltage of \SI{30}{\volt}. The preliminary pulse height distribution yields a mean value of \SI{\sim11}{\kilo e}. Since the calibration of the \ac{ROC} has not been completed the exact value has yet to be determined.
 %%%%%%%%%%%%%%%%%%%%%%% 1x5 %%%%%%%%%%%%%%%%%%%%%%%%%%
-\paragraph{FE-I4}
-The second prototype is connected to the ATLAS FE-I4 \ac{ROC} \cite{fei4}
-with a \SI{1x5}{} ganging due to its pitch of \SI{50x250}{\micro\meter} . The bump bonding was done using a adapted process with tin-silver bumps. Using a beam telescope with \SI{3}{\micro\meter} spatial resolution the efficiency could could be mapped to the spatial coordinates yielding an efficiency of \SI{97.8}{\%} over a contiguous area (\ar{em1}). However there are many small regions where the device is almost completely inefficient. 
-\wrapfig[r]{.4}{EffAtL1}[\SI{1x5}{} efficiency][em1]
-The reason for this are most likely issues with the bump bonding or the metallisation. Nevertheless the preliminary pulse height in the good region already amount to \SI{\sim15}{\kilo e} which corresponds to a \ac{CCE} of more than \SI{80}{\%}. 
-%TODO pulse height
+\subsection{FE-I4b read-out}
+The second prototype was connected to the FE-I4b 
+\fig{.25}{EffAtL1}[\SI{5x1}{} efficiency][em1]
+\ac{ROC} \cite{fei4} with a \SI{5x1}{} cell ganging due to its pitch of \SI{250x50}{\micro\meter}. The bump bonding was performed at IFAE-CNM in Barcelona by an adapted process with tin-silver bumps. Using a high resolution beam telescope with a spatial resolution of \SI{3}{\micro\meter} at the device under test the efficiency could be mapped to the spatial coordinates. The results yield an efficiency of \SI{97.8}{\%} over the contiguous area in the red box (\ar{em1}). The missing efficiency is most likely due to issues with the bump bonding or the metallisation. Nevertheless the preliminary pulse height in the fiducial region already amounts to \SI{\sim15}{\kilo e} which is consistent with the result of the first prototype considering the different momenta of the incident particles. A precise calibration for this \ac{ROC} is also under way.
