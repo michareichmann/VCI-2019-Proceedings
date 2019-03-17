@@ -2,6 +2,7 @@
 \documentclass[final,5p,times,twocolumn]{elsarticle} 
 
 \usepackage{lineno,hyperref}
+\usepackage{numcompress}
 
 \input{extrapackages}
 \input{settings}
@@ -9,8 +10,6 @@
 
 \newcommand{\auth}[2]{\author[#1]{#2}}
 \newcommand{\aff}[2]{\address[#1]{#2}}
-
-\bibliographystyle{elsarticle-num}
 
 %%%%%%%%%%%%%%%%%%%%%%%
 \journal{Nuclear Instruments \& Methods in Physics, Section A}
@@ -24,7 +23,7 @@
 	\input{Abstract}
 	
 	\begin{keyword}
-	Diamond Detectors \sep 3D \sep Rate
+	Diamond Detectors \sep 3D Sensors \sep Particle Flux
 	% \MSC[2010] 00-01\sep  99-00
 	\end{keyword}
 
@@ -41,6 +40,26 @@
 \input{acros}
 
 \section*{References}
+%% Numbered
+
+%% Numbered without titles
+%\bibliographystyle{model1a-num-names}
+
+%% Harvard
+% \bibliographystyle{model2-names.bst}\biboptions{authoryear}
+
+%% Vancouver numbered
+% \bibliographystyle{model3-num-names}
+
+%% Vancouver name/year
+%\usepackage{numcompress}\bibliographystyle{model4-names}\biboptions{authoryear}
+
+%% APA style
+% \bibliographystyle{model5-names}\biboptions{authoryear}
+
+%% AMA style
+\bibliographystyle{model6-num-names}
+% \bibliographystyle{elsarticle-num}
 \bibliography{mybibfile}
 
 \end{document}
