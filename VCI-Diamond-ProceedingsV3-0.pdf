@@ -1,0 +1,65 @@
+% \documentclass[review]{elsarticle}
+\documentclass[final,5p,times,twocolumn]{elsarticle} 
+
+\usepackage{lineno,hyperref}
+\usepackage{numcompress}
+
+\input{extrapackages}
+\input{settings}
+\input{newcommands}
+
+\newcommand{\auth}[2]{\author[#1]{#2}}
+\newcommand{\aff}[2]{\address[#1]{#2}}
+
+%%%%%%%%%%%%%%%%%%%%%%%
+\journal{Nuclear Instruments \& Methods in Physics, Section A}
+\title{New Test Beam Results of 3D and Pad Detectors Constructed with Poly-Crystalline CVD Diamond}
+
+\begin{document}
+
+\begin{frontmatter}
+
+	\input{authors}
+	\input{Abstract}
+	
+	\begin{keyword}
+	Diamond Detectors \sep 3D Sensors \sep Particle Flux
+	% \MSC[2010] 00-01\sep  99-00
+	\end{keyword}
+
+\end{frontmatter}
+
+\linenumbers
+\input{Introduction}
+\input{3D}
+\input{Rate}
+\input{Conclusion}
+\input{Acknowledgements}
+
+% \section*{List of Acronyms}
+\input{acros}
+
+\section*{References}
+%% Numbered
+
+%% Numbered without titles
+%\bibliographystyle{model1a-num-names}
+
+%% Harvard
+% \bibliographystyle{model2-names.bst}\biboptions{authoryear}
+
+%% Vancouver numbered
+% \bibliographystyle{model3-num-names}
+
+%% Vancouver name/year
+%\usepackage{numcompress}\bibliographystyle{model4-names}\biboptions{authoryear}
+
+%% APA style
+% \bibliographystyle{model5-names}\biboptions{authoryear}
+
+%% AMA style
+\bibliographystyle{model6-num-names}
+% \bibliographystyle{elsarticle-num}
+\bibliography{mybibfile}
+
+\end{document}
